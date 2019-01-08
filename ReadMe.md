@@ -4,11 +4,13 @@ A simple arduino file that controls an AD9959 device with the SPI library
 I wrote this because I could not find an already existing library that I could get to work.
 To get this to work you will need to check the following:
 
-Ensure you have supplied power to ALL 1.8 and 3.3V power ports on the DDS. If you are using the development board as I am, you must supply to ALL of the screw terminals as well as ONE of the SMA terminals (the rest of the SMA terminals are in series).
+1. Ensure that all jumpers are moved to the manual control position
 
-You will need a reference clock that is at least twice the frequency you wish to generate, which is connected to the REF CLK sma connector. I use a .6V pk-pk signal with no issues.
+2. Ensure you have supplied power to ALL 1.8 and 3.3V power ports on the DDS. If you are using the development board as I am, you must supply to ALL of the screw terminals as well as ONE of the SMA terminals (the rest of the SMA terminals are in series).
 
-Connect the arduino ports to the pins as instructed in the arduino file.
+3. You will need a reference clock that is at least twice the frequency you wish to generate, which is connected to the REF CLK sma connector. I use a .6V pk-pk signal with no issues.
+
+4. Connect the arduino ports to the pins as instructed in the arduino file.
   csbPin -> CSB
   IO_UpdatePin -> IO Update
   resetPin -> resetPin
