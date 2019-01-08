@@ -13,10 +13,12 @@ To get this to work you will need to check the following:
 4. Make sure you are connected to the DAC filter outputs instead of the DAC outputs.
 
 5. Connect the arduino ports to the pins as instructed in the arduino file.
+
   csbPin -> CSB
   IO_UpdatePin -> IO Update
   resetPin -> resetPin
   SDIO3Pin -> SDIO3
+  
   (implicit pins chosen by SPI library [varies with arduino model, check SPI library [Refernence](https://www.arduino.cc/en/reference/SPI)] for your model)
   Pin 11 (MOSI) -> SDIO0
   Pin 13 (SCK) ->  SCLK
