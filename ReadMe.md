@@ -17,8 +17,7 @@ csbPin -> CSB <br/>
 IO_UpdatePin -> IO Update <br/>
 resetPin -> resetPin <br/>
 SDIO3Pin -> SDIO3 <br/>
-
-(implicit pins chosen by SPI library [varies with arduino model, check SPI library [Refernence](https://www.arduino.cc/en/reference/SPI)] for your model)
+(implicit pins chosen by SPI library [varies with arduino model, check SPI library [Refernence](https://www.arduino.cc/en/reference/SPI)] for your model)<br/>
 Pin 11 (MOSI) -> SDIO0 <br/>
 Pin 13 (SCK) ->  SCLK <br/>
 Pin 12 (MISO) -> SDIO2 (not used) <br/>
