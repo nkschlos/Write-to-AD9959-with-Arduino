@@ -13,15 +13,15 @@ To get this to work you will need to check the following:
 4. Make sure you are connected to the DAC filter outputs instead of the DAC outputs.
 
 5. Connect the arduino ports to the pins as instructed in the arduino file.
->csbPin -> CSB
->IO_UpdatePin -> IO Update
->resetPin -> resetPin
->SDIO3Pin -> SDIO3
+csbPin -> CSB <br/>
+IO_UpdatePin -> IO Update <br/>
+resetPin -> resetPin <br/>
+SDIO3Pin -> SDIO3 <br/>
 
->(implicit pins chosen by SPI library [varies with arduino model, check SPI library [Refernence](https://www.arduino.cc/en/reference/SPI)] for your model)
->Pin 11 (MOSI) -> SDIO0
->Pin 13 (SCK) ->  SCLK
->Pin 12 (MISO) -> SDIO2 (not used)
+(implicit pins chosen by SPI library [varies with arduino model, check SPI library [Refernence](https://www.arduino.cc/en/reference/SPI)] for your model)
+Pin 11 (MOSI) -> SDIO0 <br/>
+Pin 13 (SCK) ->  SCLK <br/>
+Pin 12 (MISO) -> SDIO2 (not used) <br/>
   
 You MUST use level shifter to go from the 5v arduino outputs to 3.3v inputs on the DDS. I use 2.2 and 3.3K resistors to make a voltage divider, but keep in mind that on the Dev board the SDIO ports have internal 1k resistors to ground, so if you are using voltage dividors you need to include these in your design.
 
