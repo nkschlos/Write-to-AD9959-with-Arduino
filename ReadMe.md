@@ -29,3 +29,6 @@ You MUST use level shifter to go from the 5v arduino outputs to 3.3v inputs on t
 I used a header to house the wires so it could be easily plugged into the development board. This is shown below.
 
 ![alt text](https://github.com/nkschlos/Write-to-AD9959-with-Arduino/blob/master/images/IMG_20190108_124642.jpg?raw=true)
+
+I find that after writing, the signal updates within a few microseconds
+![alt text](https://github.com/nkschlos/Write-to-AD9959-with-Arduino/blob/master/images/IMG_20190108_124852.jpg?raw=true)
