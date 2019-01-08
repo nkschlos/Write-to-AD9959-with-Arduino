@@ -10,7 +10,9 @@ To get this to work you will need to check the following:
 
 3. You will need a reference clock that is at least twice the frequency you wish to generate, which is connected to the REF CLK sma connector. I use a .6V pk-pk signal with no issues.
 
-4. Connect the arduino ports to the pins as instructed in the arduino file.
+4. Make sure you are connected to the DAC filter outputs instead of the DAC outputs.
+
+5. Connect the arduino ports to the pins as instructed in the arduino file.
   csbPin -> CSB
   IO_UpdatePin -> IO Update
   resetPin -> resetPin
