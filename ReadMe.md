@@ -17,8 +17,7 @@ To get this to work you will need to check the following:
   IO_UpdatePin -> IO Update
   resetPin -> resetPin
   SDIO3Pin -> SDIO3
-  
-(implicit pins chosen by SPI library [varies with arduino model, check library reference])
+  (implicit pins chosen by SPI library [varies with arduino model, check SPI library [Refernence](https://www.arduino.cc/en/reference/SPI)] for your model)
   Pin 11 (MOSI) -> SDIO0
   Pin 13 (SCK) ->  SCLK
   Pin 12 (MISO) -> SDIO2 (not used)
