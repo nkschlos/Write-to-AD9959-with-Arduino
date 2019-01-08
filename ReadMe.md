@@ -20,6 +20,7 @@ Connect the arduino ports to the pins as instructed in the arduino file.
   Pin 12 (MISO) -> SDIO2 (not used)
   
 You MUST use level shifter to go from the 5v arduino outputs to 3.3v inputs on the DDS. I use 2.2 and 3.3K resistors to make a voltage divider, but keep in mind that on the Dev board the SDIO ports have internal 1k resistors to ground, so if you are using voltage dividors you need to include these in your design.
+
 ![alt text](https://github.com/nkschlos/Write-to-AD9959-with-Arduino/blob/master/1kresistors.PNG?raw=true)
 
 I used a header to house the wires so it could be easily plugged into the development board. This is shown below.
