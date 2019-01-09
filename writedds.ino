@@ -1,6 +1,8 @@
 
 #include <SPI.h>
 /*
+  ***********Written by Noah Schlossberger in Jan 2019
+  
   Place your code inside void loop()
   A complete writing of the frequency looks like this:
 
