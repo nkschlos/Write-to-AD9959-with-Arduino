@@ -106,10 +106,10 @@ void writeFreq(long ftw)
 {
   {
     //CTW0 Channel Frequency Tuning Word 0 (Frequency Selection)
-    byte writeCFTW0_1 = (byte )((ftw >> 24) & 0xff);//B01110000;
-    byte writeCFTW0_2 = (byte )((ftw >> 16) & 0xff);//B00111101;
-    byte writeCFTW0_3 = (byte )((ftw >> 8) & 0xff);//B00001010;
-    byte writeCFTW0_4 = (byte )(ftw & 0xff);//B10100100;
+    byte writeCFTW0_1 = (byte )((ftw >> 24) & 0xff);
+    byte writeCFTW0_2 = (byte )((ftw >> 16) & 0xff);
+    byte writeCFTW0_3 = (byte )((ftw >> 8) & 0xff);
+    byte writeCFTW0_4 = (byte )(ftw & 0xff);
 
     byte valsToWrite[] = {B00000100, writeCFTW0_1, writeCFTW0_2, writeCFTW0_3, writeCFTW0_4};
     spiwrite(valsToWrite, 5,  standSets);
