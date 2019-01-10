@@ -47,7 +47,6 @@ void setup()
   pinMode(csbPin, OUTPUT);
   //prewrite logic levels
   digitalWrite(csbPin, HIGH);
-  digitalWrite(9, LOW);
   digitalWrite(IO_UpdatePin, LOW);
   //initialize
   SPI.begin();
