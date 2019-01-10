@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map For Test
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+AD9959	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+pulseUpdate	KEYWORD2
+resetDDS	KEYWORD2
+resetCommunication	KEYWORD2
+writeFreq	KEYWORD2
+channelSel	KEYWORD2
+initializeDDS	KEYWORD2
+initialize	KEYWORD2
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
