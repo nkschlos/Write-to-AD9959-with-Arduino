@@ -59,7 +59,7 @@ void loop()
   //place code here. simple write example that writes to all channels is shown below
   channelSel(4);
   {
-    long testfrequency = 214750000;
+    long testfrequency = 21475000;
     writeFreq(testfrequency);
   }
   pulseUpdate();
