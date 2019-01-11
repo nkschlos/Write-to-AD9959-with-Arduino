@@ -29,6 +29,7 @@ const int resetPin = 10;
 const int SDIO3Pin = 3;
 AD9959 myDDS = AD9959(resetPin, IO_UpdatePin, csbPin, SDIO3Pin);
 
+long testFrequencyTuningWord = 214750000;
 
 void setup()
 {
@@ -37,17 +38,8 @@ void setup()
 
 void loop()
 {
-  {
-    myDDS.channelSel(0);             //select a channel (0,1,2,3) to write to.  4 selects all channels
-    long testFrequencyTuningWord = 214750000;
-    myDDS.writeFreq(testFrequencyTuningWord);  //write a new frequency to the selected channel
-    myDDS.pulseUpdate();        //update output to the new frequency
-  }
-  delay(1000);
-  {
-    long testFreq = 214750000;
-    myDDS.writeFreq(testFreq);
-    myDDS.pulseUpdate();
-  }
+  myDDS.channelSel(0);             //select a channel (0,1,2,3) to write to.  4 selects all channels
+  myDDS.writeFreq(testFrequencyTuningWord);  //write a new frequency to the selected channel
+  myDDS.pulseUpdate();        //update output to the new frequency
   delay(1000);
 }
