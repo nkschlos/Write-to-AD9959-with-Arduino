@@ -45,6 +45,7 @@ void AD9959::initialize()
   pinAsOutput(_IO_UpdatePin);
   pinAsOutput(_ResetPin);
   pinAsOutput(_CsbPin);
+  pinAsOutput(_SDIO3Pin);
   //prewrite logic levels
   digitalHigh(_CsbPin);
   //initialize
