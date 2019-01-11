@@ -2,6 +2,8 @@
 A simple arduino file that controls an AD9959 device with the SPI library
 
 I wrote this because I could not find an already existing library that I could get to work.
+To install, download and copy the "AD9959" folder into your arduino libraries folder, usually Documents/Arduino/libraries on windows. Then you should be able to go to the editor's File->Examples->AD9959->writeFreq to see how it works.
+
 To get this to work you will need to check the following:
 
 1. Ensure that all jumpers are moved to the manual control position
