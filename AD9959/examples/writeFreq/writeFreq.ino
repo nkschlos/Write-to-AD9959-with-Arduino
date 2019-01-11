@@ -27,12 +27,11 @@ const int csbPin = 7;
 const int IO_UpdatePin = 2;
 const int resetPin = 10;
 const int SDIO3Pin = 3;
-
+AD9959 myDDS = AD9959(resetPin, IO_UpdatePin, csbPin, SDIO3Pin);
 
 
 void setup()
 {
-  AD9959 myDDS = AD9959(resetPin, IO_UpdatePin, csbPin, SDIO3Pin);
   myDDS.initialize();           // initialize
 }
 
