@@ -22,7 +22,11 @@ Pin 11 (MOSI) -> SDIO0 <br/>
 Pin 13 (SCK) ->  SCLK <br/>
 Pin 12 (MISO) -> SDIO2 (not used) <br/>
   
-You MUST use level shifter to go from the 5v arduino outputs to 3.3v inputs on the DDS. I use 2.2 and 3.3K resistors to make a voltage divider, but keep in mind that on the Dev board the SDIO ports have internal 1k resistors to ground, so if you are using voltage dividors you need to include these in your design.
+You MUST use level shifter to go from the 5v arduino outputs to 3.3v inputs on the DDS. I use 2.2 and 3.3K resistors to make a voltage divider as shown below. 
+
+![alt text](https://github.com/nkschlos/Write-to-AD9959-with-Arduino/blob/master/images/schemeit-project.png?raw=true)
+
+Keep in mind that on the Dev board the SDIO ports have internal 1k resistors to ground, so if you are using voltage dividors you need to include these in your design.
 
 ![alt text](https://github.com/nkschlos/Write-to-AD9959-with-Arduino/blob/master/images/1kresistors.PNG?raw=true)
 
