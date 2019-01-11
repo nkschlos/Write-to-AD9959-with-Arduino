@@ -32,5 +32,5 @@ Keep in mind that on the Dev board the SDIO ports have internal 1k resistors to 
 
 I used a header to house the wires so it could be easily plugged into the development board, and the voltage dividers on a protoboard.
 
-![alt text](https://github.com/nkschlos/Write-to-AD9959-with-Arduino/blob/master/images/IMG_20190108_124642.jpg?raw=true)
+![alt text](https://github.com/nkschlos/Write-to-AD9959-with-Arduino/blob/master/images/board.jpg?raw=true)
 
