@@ -75,7 +75,7 @@ void AD9959::initializeDDS() //writes all of the static settings to the DDS
 
   //CFR Channel Function Register (Single Tone, AM, FM, etc)
   {
-    byte valsToWrite[] = {B00000011, B10000000, B00000011, B00000000};
+    byte valsToWrite[] = {B00000011, B00000000, B00000011, B00000000};
     spiwrite(valsToWrite, 4, _standSets);
   }
 }
