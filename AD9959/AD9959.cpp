@@ -62,7 +62,7 @@ void AD9959::initializeDDS() //writes all of the static settings to the DDS
 
   //FR1 Function Register 1
   {
-    byte valsToWrite[] = {B00000000, B00000000, B00000000, B00000000};
+    byte valsToWrite[] = {B00000001, B10000011, B00000000, B00000000};
     spiwrite(valsToWrite, 4, _standSets);
   }
 
